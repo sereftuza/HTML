@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@1,100;1,300;1,500;1,700;1,900&display=swap");
+
+* {
+  text-align: center;
+  margin: 0; /*basta tum marjinleri sifirla */
+  box-sizing: border-box;
+  /* box-sizing CSS de kutu modeli icin . genelde border box kullanilir */
+}
+h1 {
+  margin-top: 50px;
+}
+
+body {
+  background-image: linear-gradient(rgb(144, 176, 235), rgb(97, 150, 97));
+  font-family: "Nunito", sans-serif;
+}
+
+.input {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 25px;
+}
+.label {
+  display: block; /* inline olan bir eleman blok hale getirilebilir */
+  margin-right: 10px;
+}
+.btn {
+  font-size: 16px;
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  border: 2px solid rgb(65, 75, 65);
+  border-radius: 20px;
+  background: rgb(224, 52, 52);
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(121, 115, 115);
+}
+.far,
+.fas {
+  color: black;
+  font-size: 18px;
+}
+textarea {
+  width: 200px;
+  height: 100px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  border-radius: 10px;
+}

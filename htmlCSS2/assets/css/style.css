@@ -1,0 +1,33 @@
+* {
+  text-align: center;
+}
+h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 30px;
+}
+/* solid-double-dashed olabilir */
+/* cizgi kalinligi - cizgi turu- renk */
+.tablo {
+  border: 3px solid gray;
+  border-collapse: collapse;
+  width: 50%;
+  /* yuzde olunca sayfanin yuzdesi  */
+  margin-left: auto;
+  margin-right: auto;
+  /* sol ve sagdan otomatik bosluk ile hizalma yapilabilir */
+}
+th,
+td {
+  border: 2px solid gray;
+}
+th {
+  background-color: yellowgreen;
+}
+/* satirlarin arka plan renk  */
+tr:hover {
+  background-color: rgb(194, 188, 188);
+}
+tr:nth-child(even) {
+  background-color: rgb(233, 226, 226);
+}
