@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Display</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-3 text-center text-info bg-secondary">DISPLAY</h1>
+      <!-- ** Aynı CSS'de olduğu gibi Bootstrap ile de nesnelerin display özellikleri değiştirilebilir. Display classları hakkında ayrıntılı bilgi için 
+
+      ! https://getbootstrap.com/docs/5.0/utilities/display/ -->
+      <!-- Sadece xs ekranlarda gözükecek bir element tasarlayınız.
+      Sadece xs ekranlarda gözükmeyecek bir element tasarlayınız.
+      Sadece md ekranlarda gözükecek bir element tasarlayınız.
+      Sadece md ekranlarda gözükmeyecek bir element tasarlayınız.
+      Sadece md+ ekranlarda gözükecek bir element tasarlayınız. -->
+      <div class="container text-center">
+        <div class="d-sm-none bg-danger">1</div>
+        <div class="d-none d-sm-block bg-warning">2</div>
+        <div class="d-none d-md-block d-lg-none bg-info">3</div>
+        <div class="d-none d-md-block d-lg-none bg-info">3</div>
+      </div>
+    </div>
+    <!-- ? fixed-top sayfanın üzerine fixed-bottom ise sayfanın altına nesneleri yapıştırır.
+    ? Ayrıntılı bilgi için 
+    ! https://getbootstrap.com/docs/4.0/utilities/position/ -->
+    <div
+      class="
+        container-fluid
+        d-flex
+        justify-content-between
+        mt-3
+        bg-dark
+        text-light
+        p-2
+      "
+    >
+      <div>
+        <i class="fas fa-phone-alt text-warning"></i>
+        <span class="d-none d-md-inline"> +90 0555 55 55</span>
+        <i class="fab fa-whatsapp text-warning ms-3"></i>
+        <span class="d-none d-md-inline">+90 0555 55 55</span>
+      </div>
+      <div>
+        <i class="fab fa-twitter text-info mx-2"></i>
+        <i class="fab fa-youtube text-info mx-2"></i>
+        <i class="fab fa-instagram text-info mx-2"></i>
+        <span class="d-none d-lg-inline">#techproed</span>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
